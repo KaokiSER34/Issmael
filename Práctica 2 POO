@@ -1,0 +1,116 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.mavenproject1;
+
+/**
+ *
+ * @author Alexa
+ */
+public class Mavenproject1 {
+
+    public static void main(String[] args) {
+        System.out.println("Practica 1");
+        
+    int a;  //Declaramos variable
+    a=15;   //Inicializamos variable
+    int b=10;
+    int c = a+b;
+    
+    if(a<b){
+        System.out.println("a menor que b");
+    }
+    else if(a>b){
+        System.out.println("b es menor que a");
+    }
+    else{
+        System.out.println("a es igual que b"); 
+    }
+
+    if(menor(a,b)){          //Mismo programa pero con un metodo
+        System.out.println("A menor que B");
+    }
+    else{
+        System.out.println("A no es menor que B");
+    }
+                             //Termina bloque
+                             
+    int z;                         //inicia bloque de suma que llama a metodo fuera de la clase main
+                             /*
+                             las funciones o métodos van fuera del main en la mayoría de 
+                             los lenguajes de programación, como C, Java y Python.
+                             */
+        System.out.println("###Suma###");
+        System.out.println(suma(a,b));
+                             //Finaliza bloque de suma
+        System.out.println("####Sumav2####");
+        System.out.println(sumav2(a,b));
+        
+        System.out.println("##Switch##");
+            char vocal = 'e';
+            switch(vocal){
+                case 'a' -> System.out.println("Seleccion vocal a");
+                case 'e' -> System.out.println("Seleccion vocal e");
+                case 'i' -> System.out.println("Seleccion vocal i");
+                case 'o' -> System.out.println("Seleccion vocal o");
+                case 'u' -> System.out.println("Seleccion vocal u");
+                default -> System.out.println("No es una vocal");
+            }
+        
+        System.out.println("#####while#####");    
+        int n=0;
+        while(n<10){
+            System.out.println("Contador va hacia arriba n="+n);
+            n++;// n se quedo con el valor de 9
+        }
+        while(0<n){
+            System.out.println("Contador que va hacia abajo"+n);
+            n--;
+        }
+        System.out.println("el valor actual de n: "+n);
+        
+        System.out.println("#####do while#####");
+        //codigo de do while
+        do {
+       System.out.println("Contador hacia abajo"+n);
+       n--; // Corrección del error de sintaxis
+       } while(n >-10);
+       
+       System.out.println("dowhile n= " + n);
+       
+       //Inicia bloque for
+       
+       for(int i=0; i<10; i++){
+           System.out.println("Contador hacia arriba i= "+i);
+       }
+       
+       for (int i = 10; i>0; i--){
+           System.out.println("Contador hacia abajo i= "+i);
+       }
+        
+    
+    }
+    //Bloque 1
+    private static boolean menor(int a, int b){ //Creamos un metodo
+        if(a<b){
+            return false;
+        }
+        else{
+            return true;
+            }
+   } // finaliza bloque 1
+    
+    //metodo 2
+    private static int suma(int a, int b){ //Bloque 2 suma
+       int c = a + b;
+       return c;
+    }
+    //finaliza metodo 2
+    //Inicia metodo 3 sumav2
+    private static int sumav2(int a, int b){
+        return a+b;
+    }
+    //Finalizmos Sumav2
+         
+    }
