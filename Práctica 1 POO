@@ -1,0 +1,12 @@
+package com.mycompany.poop1.maven;
+
+public class POOP1Maven {
+    
+    public static void main (String[] args){
+        System.out.println("Hola mundo");
+        int NUMEROUNO = 329;
+        int NUMERODOS = 623;
+        int RESULTADO = NUMEROUNO * NUMERODOS;
+        System.out.println("La multiplicacion es: " + RESULTADO);
+    }
+}
